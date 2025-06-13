@@ -17,6 +17,5 @@ Perfect for reverse engineering and dynamic analysis of Android apps that use Kt
 **Connect your Android device** (ensure `adb` is installed and USB debugging is enabled):
 
    ```bash
-   adb devices
    frida -U -f <app_package_name> -l frida-ktor.js
 
