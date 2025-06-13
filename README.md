@@ -10,3 +10,13 @@ A Frida script for dynamically intercepting and logging outgoing HTTP requests m
 
 ## Use Case
 Perfect for reverse engineering and dynamic analysis of Android apps that use Ktor as their networking client.
+
+
+## How to Run
+
+**Connect your Android device** (ensure `adb` is installed and USB debugging is enabled):
+
+   ```bash
+   adb devices
+   frida -U -f <app_package_name> -l frida-ktor.js
+
